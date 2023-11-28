@@ -1,0 +1,36 @@
+---
+import { Prism } from '@astrojs/prism';
+---
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Astro description" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link
+		href="/prism-dracula.css"
+		rel="stylesheet"
+	/>
+	<meta name="generator" content={Astro.generator} />
+	<title>Test</title>
+</head>
+<body>
+	<main>
+		<Prism lang="js" code={`const foo = 'bar';`} />
+	</main>
+
+</body>
+</html>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+</style>
